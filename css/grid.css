@@ -1,0 +1,32 @@
+/* ====== GRID LAYOUTS ====== */
+
+.grid {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  grid-template-rows: 70px ;
+  grid-template-areas:
+    "header header header"
+    "nav main main"
+
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+main .main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-gap: 10px;
+  background-color: green;
+
+}

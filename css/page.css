@@ -1,0 +1,57 @@
+/* ====== PAGE LAYOUTS ====== */
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #7477bf;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside {
+  background-color: #4d4c72;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+/* === HEADER === */
+
+header .title {
+  margin: 0 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 10px 30px;
+}
+
+.profile img {
+  /* border-radius: 50% */
+}
+
+.profile hr {
+
+}
+
+
+/* === ASIDE === */
+
+aside img {
+  margin: 30px 0;
+}
+
+/* ========== MAIN ======== */
