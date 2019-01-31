@@ -3,30 +3,43 @@
 .grid {
   display: grid;
   grid-template-columns: 80px 1fr 1fr;
-  grid-template-rows: 70px ;
+  grid-template-rows: 70px 350px 350px 350px 350px;
   grid-template-areas:
     "header header header"
+    "nav main main"
+    "nav main main"
+    "nav main main"
     "nav main main"
 
 }
 
+/* === MAIN === */
 header {
   grid-area: header;
 }
 
+/* === MAIN === */
 aside {
   grid-area: nav;
 }
+
+/* === MAIN === */
+
+/* main squares 350x550 */
+/*
+dashboard, search, traffic, daily,
+mobile, social, members, activity, message, settings
+ */
 
 main {
   grid-area: main;
 }
 
-main .main {
+/* main .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 100px;
   grid-gap: 10px;
   background-color: green;
 
-}
+} */
