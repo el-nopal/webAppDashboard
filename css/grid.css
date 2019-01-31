@@ -10,12 +10,6 @@
    "nav main"
    "nav main"
    "nav main"
-
-   /* "nav dashboard dashboard"
-   "nav daily mobile"
-   "nav social social"
-   "nav members activity"
-   "nav message settings" */
 }
 
 /* === overall grid === */
@@ -32,7 +26,6 @@ main {
 }
 
 /* === MAIN GRID === */
-
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
