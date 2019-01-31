@@ -1,56 +1,78 @@
 /* ====== GRID LAYOUTS ====== */
 .grid {
   display: grid;
-  grid-template-columns: 90px 1fr 1fr;
+  grid-template-columns: 90px 2fr;
   grid-template-rows: 70px 500px 350px 230px 350px 350px;
   grid-template-areas:
-     "header header header"
-     "nav dashboard dashboard"
-     "nav daily mobile"
-     "nav social social"
-     "nav members activity"
-     "nav message settings"
+   "header header"
+   "nav main"
+   "nav main"
+   "nav main"
+   "nav main"
+   "nav main"
+
+   /* "nav dashboard dashboard"
+   "nav daily mobile"
+   "nav social social"
+   "nav members activity"
+   "nav message settings" */
 }
 
-/* === HEADER === */
+/* === overall grid === */
 header {
   grid-area: header;
 }
 
-/* === ASIDE === */
 aside {
   grid-area: nav;
 }
 
-/* === MAIN === */
-main .dashboard {
+main {
+  grid-row: main;
+}
+
+/* === MAIN GRID === */
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px 350px 230px 350px 350px;
+  grid-template-areas:
+  "dashboard dashboard"
+  "daily mobile"
+  "social social"
+  "members activity"
+  "message settings"
+}
+
+.dashboard {
   grid-area: dashboard;
 }
 
-main .daily-traffic {
+.daily-traffic {
   grid-area: daily;
 }
 
-main .mobile {
+.mobile {
   grid-area: mobile;
 }
 
-main .social {
+.social {
   grid-area: social;
 }
 
-main .members {
+.members {
   grid-area: members;
 }
 
-main .activity {
+.activity {
   grid-area: activity;
 }
 
-main .message {
+.message {
   grid-area: message;
 }
 
-main .settings {
+.settings {
   grid-area: settings;
 }
