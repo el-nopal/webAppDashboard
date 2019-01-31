@@ -70,7 +70,6 @@ aside img {
 /* ========== MAIN ======== */
 
 /* border: 2px solid #d2d2d2 */
-
 /*
 .dashboard
 main .daily-traffic
@@ -81,3 +80,14 @@ main .activity
 main .message
 main .settings
  */
+
+main .dashboard,
+main .daily-traffic,
+main .mobile,
+main .social,
+main .members,
+main .activity,
+main .message,
+main .settings {
+  border: 2px solid #d2d2d2;
+}
