@@ -1,5 +1,6 @@
 /* ====== PAGE LAYOUTS ====== */
 
+/* --- BASE --- */
 * {
   box-sizing: border-box;
 }
@@ -23,11 +24,10 @@ aside {
 }
 
 main {
-  color: #afafaf;
+  color: #666666;
 }
 
-/* === HEADER === */
-
+/* --- HEADER --- */
 header .title {
   margin: 0 20px;
 }
@@ -61,11 +61,23 @@ header .title {
   border-radius: 50%;
 }
 
-/* === ASIDE === */
-
+/* --- ASIDE --- */
 aside img {
   width: 35px;
   margin: 15px 0;
 }
 
 /* ========== MAIN ======== */
+
+/* border: 2px solid #d2d2d2 */
+
+/*
+.dashboard
+main .daily-traffic
+main .mobile
+main .social
+main .members
+main .activity
+main .message
+main .settings
+ */

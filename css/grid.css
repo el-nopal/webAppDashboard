@@ -1,45 +1,56 @@
 /* ====== GRID LAYOUTS ====== */
-
 .grid {
   display: grid;
-  grid-template-columns: 80px 1fr 1fr;
-  grid-template-rows: 70px 350px 350px 350px 350px;
+  grid-template-columns: 90px 1fr 1fr;
+  grid-template-rows: 70px 500px 350px 230px 350px 350px;
   grid-template-areas:
-    "header header header"
-    "nav main main"
-    "nav main main"
-    "nav main main"
-    "nav main main"
-
+     "header header header"
+     "nav dashboard dashboard"
+     "nav daily mobile"
+     "nav social social"
+     "nav members activity"
+     "nav message settings"
 }
 
-/* === MAIN === */
+/* === HEADER === */
 header {
   grid-area: header;
 }
 
-/* === MAIN === */
+/* === ASIDE === */
 aside {
   grid-area: nav;
 }
 
 /* === MAIN === */
-
-/* main squares 350x550 */
-/*
-dashboard, search, traffic, daily,
-mobile, social, members, activity, message, settings
- */
-
-main {
-  grid-area: main;
+main .dashboard {
+  grid-area: dashboard;
 }
 
-/* main .main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 100px;
-  grid-gap: 10px;
-  background-color: green;
+main .daily-traffic {
+  grid-area: daily;
+}
 
-} */
+main .mobile {
+  grid-area: mobile;
+}
+
+main .social {
+  grid-area: social;
+}
+
+main .members {
+  grid-area: members;
+}
+
+main .activity {
+  grid-area: activity;
+}
+
+main .message {
+  grid-area: message;
+}
+
+main .settings {
+  grid-area: settings;
+}
