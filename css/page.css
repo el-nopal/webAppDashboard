@@ -23,7 +23,7 @@ aside {
 }
 
 main {
-  color: #666666;
+  color: #676666;
 }
 
 h4 {
@@ -71,6 +71,7 @@ aside img {
 }
 
 /* ========== MAIN ======== */
+
 .dashboard,
 .daily-traffic,
 .mobile,
@@ -79,13 +80,37 @@ aside img {
 .activity,
 .message,
 .settings {
-  border: 2px solid #d2d2d2;
-}
-
-.dashboard {
-
+  border: 1px solid #d2d2d2;
 }
 
 .daily-traffic {
 
+}
+
+img[alt="twiter-icon"],
+img[alt="facebook-icon"],
+img[alt="google-icon"] {
+  background-color: #7477bf;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+svg .social-svg {
+  width: 30px;
+}
+
+.social-blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.twitter,
+.facebook,
+.google {
+  width: 330px;
+  height: 115px;
+  border: 2px solid #d2d2d2;
 }

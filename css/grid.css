@@ -69,3 +69,23 @@ main {
 .settings {
   grid-area: settings;
 }
+
+/* === social blocks === */
+.twitter,
+.facebook,
+.google {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+/* <div class="twitter">
+  <img src="icons/icon-twitter.svg" alt="twiter-icon">
+  <p>Twitter</p>
+  <h3>10,345</h3>
+</div> */
+
+/*
+
+ */

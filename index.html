@@ -40,39 +40,56 @@
 
           </div>
           <div class="traffic">
-            <h4>traffic</h4>
+            <p>traffic</p>
             <canvas id="barChart" width="1050" height="270"></canvas>
           </div> -->
 
           <div class="daily-traffic">
-            <h4>daily traffic</h4>
-
-            <canvas id="lineChart" width="480" height="260"></canvas>
-
+            <p>daily traffic</p>
+            <div class="chart-container" style="position: relative; height:260px; width:480px">
+              <canvas id="barChart" width="480" height="260"></canvas>
+            </div>
           </div>
-
-
 
           <div class="mobile">
-            <h4>mobile users</h4>
-            <canvas id="barChart" width="400" height="250"></canvas>
+            <p>mobile users</p>
+            <div class="chart-container" style="position: relative; height:250px; width:400px">
+              <canvas id="donutChart" width="400" height="250"></canvas>
+            </div>
           </div>
-
 
           <div class="social">
-            <h4>social stats</h4>
+            <p>social stats</p>
+            <div class="social-blocks">
+              <div class="twitter">
+                <img src="icons/icon-twitter.svg" alt="twiter-icon">
+                <p>Twitter</p>
+                <h3>10,345</h3>
+              </div>
+              <div class="facebook">
+                <img src="icons/icon-facebook.svg" alt="facebook-icon">
+                <p>Facebook</p>
+                <h3>8,739</h3>
+              </div>
+              <div class="google">
+                <img src="icons/icon-google-plus.svg" alt="google-icon">
+                <p>Google+</p>
+                <h3>2,530</h3>
+              </div>
+            </div>
           </div>
+
           <div class="members">
-            <h4>new members</h4>
+            <p>new members</p>
           </div>
           <div class="activity">
-            <h4>recent activity</h4>
+            <p>recent activity</p>
           </div>
           <div class="message">
-            <h4>message user</h4>
+            <p>message user</p>
           </div>
           <div class="settings">
-            <h4>settings</h4>
+            <p>settings</p>
           </div>
         </div>
       </main>

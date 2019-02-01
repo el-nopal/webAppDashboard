@@ -1,13 +1,13 @@
 // ====== CHARTS ======
 // --- BAR CHART ---
-const CHART = document.getElementById("lineChart");
-let lineChart = new Chart(CHART, {
+const BAR = document.getElementById("barChart");
+let lineChart = new Chart(BAR, {
     type: 'bar',
     data: {
         labels: ["S", "M", "T", "W", "T", "F", "S"],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'people',
+            data: [75, 100, 175, 125, 225, 200, 100],
             backgroundColor: [
                 // '#7377bf',
                 '#7377bf',
@@ -18,15 +18,8 @@ let lineChart = new Chart(CHART, {
                 '#7377bf',
                 '#7377bf'
             ],
-            borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
+            borderWidth: 1,
+
         }]
     },
     options: {
@@ -37,5 +30,21 @@ let lineChart = new Chart(CHART, {
                 }
             }]
         }
+    }
+});
+
+// --- PIE CHART ---
+const DONUT = document.getElementById("donutChart");
+let donutChart = new Chart(DONUT, {
+    type: 'doughnut',
+    data: {
+      labels: ['tablets', 'phones', 'desktop'],
+      datasets: [{
+          data: [5, 5, 20],
+          backgroundColor: ['#81c98f', '#74b1bf', '#7377bf'],
+          }],
+      },
+    options: {
+      
     }
 });
