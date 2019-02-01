@@ -84,7 +84,8 @@ aside img {
 }
 
 .daily-traffic {
-
+  display: block;
+  padding: 0 5%;
 }
 
 img[alt="twiter-icon"],
