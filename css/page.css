@@ -108,7 +108,7 @@ aside img {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
+  background-color: #fbfbfb;
 }
 
 .twitter,
@@ -140,6 +140,12 @@ img[alt="google-icon"] {
 .facebook h1,
 .google h1 {
   margin: 0;
+}
+
+/* --- NEW MEMBERS --- */
+.members img {
+  width: 30px;
+  border-radius: 50%;
 }
 
 
