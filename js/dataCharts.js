@@ -1,4 +1,7 @@
 // ====== CHARTS ======
+// --- LINE CHART ---
+
+
 // --- BAR CHART ---
 const BAR = document.getElementById("barChart");
 let lineChart = new Chart(BAR, {
@@ -45,6 +48,6 @@ let donutChart = new Chart(DONUT, {
           }],
       },
     options: {
-      
+
     }
 });

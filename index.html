@@ -66,18 +66,18 @@
             <div class="social-blocks">
               <div class="twitter">
                 <img src="icons/icon-twitter.svg" alt="twiter-icon">
-                <p>Twitter</p>
-                <h3>10,345</h3>
+                <h3>Twitter</h3>
+                <h1>10,345</h1>
               </div>
               <div class="facebook">
                 <img src="icons/icon-facebook.svg" alt="facebook-icon">
-                <p>Facebook</p>
-                <h3>8,739</h3>
+                <h3>Facebook</h3>
+                <h1>8,739</h1>
               </div>
-              <div class="Google">
+              <div class="google">
                 <img src="icons/icon-google-plus.svg" alt="google-icon">
-                <p>Google+</p>
-                <h3>2,530</h3>
+                <h3>Google+</h3>
+                <h1>2,530</h1>
               </div>
             </div>
           </div>
@@ -90,6 +90,11 @@
           </div>
           <div class="message">
             <p>message user</p>
+            <div class="input-row">
+              <input class="item input" id="name" type="text" name="name" placeholder="Search for User"><br>
+              <textarea class="input type" id="topic" name="topic" rows="5" cols="21"></textarea><br>
+               <button class="button" name="submit" type="submit" value="submit-true">Send</button>
+            </div>
           </div>
 
           <div class="settings">
@@ -116,6 +121,19 @@
               <a></a>
             </span>
             </label>
+            <div class="select-timezone">
+              <label class="label" for="timezone">Select Timezone</label><br class="out">
+              <select class="input" id="timezone" name="timezone">
+                <option value="select">Select Timezone</option>
+                <option value="losangeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="newyork">New York</option>
+                <option value="madrid">Madrid</option>
+              </select><br>
+            </div>
+            <button class="button" name="submit" type="submit" value="submit-true">SAVE</button>
+            <button class="button" name="submit" type="submit" value="submit-true">CANCEL</button>
+
           </div>
         </div>
       </main>
