@@ -42,7 +42,13 @@ main {
   grid-area: dashboard;
 }
 
+.search {
+  grid-area: dashboard;
+}
 
+.traffic {
+  grid-area: dashboard;
+}
 
 
 .daily-traffic {

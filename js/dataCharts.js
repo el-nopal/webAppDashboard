@@ -1,10 +1,14 @@
 // ====== CHARTS ======
 // --- LINE CHART ---
+// const LINE = document.getElementById("lineChart");
+// let lineChart = new Chart(LINE, {
+//
+// };
 
 
 // --- BAR CHART ---
 const BAR = document.getElementById("barChart");
-let lineChart = new Chart(BAR, {
+let barChart = new Chart(BAR, {
     type: 'bar',
     data: {
         labels: ["S", "M", "T", "W", "T", "F", "S"],
@@ -12,7 +16,6 @@ let lineChart = new Chart(BAR, {
             label: 'people',
             data: [75, 100, 175, 125, 225, 200, 100],
             backgroundColor: [
-                // '#7377bf',
                 '#7377bf',
                 '#7377bf',
                 '#7377bf',
