@@ -42,6 +42,9 @@ main {
   grid-area: dashboard;
 }
 
+
+
+
 .daily-traffic {
   grid-area: daily;
 }
