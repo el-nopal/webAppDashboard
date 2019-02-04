@@ -10,6 +10,7 @@
    "nav main"
    "nav main"
    "nav main"
+   "nav main"
 }
 
 /* === overall grid === */
@@ -41,15 +42,6 @@ main {
 .dashboard {
   grid-area: dashboard;
 }
-
-.search {
-  grid-area: dashboard;
-}
-
-.traffic {
-  grid-area: dashboard;
-}
-
 
 .daily-traffic {
   grid-area: daily;

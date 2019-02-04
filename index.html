@@ -34,33 +34,34 @@
       <main>
         <div class="main">
           <div class="dashboard">
-            <h1>Dashboard</h1>
-            <div class="search">
-              <input class="user-input" type="text" name="name" placeholder="Search for User"><br>
+            <!-- tabs -->
+            <div class="tabs">
+              <h1>Dashboard</h1>
+              <input class="dashboard-search" type="text" name="name" placeholder="Search">
             </div>
-            <div class="traffic">
-              <p>traffic</p>
+              <!-- title-switch -->
+              <div class="traffic-switch">
+                <p>traffic</p>
+                <div class="switch-toggle switch-ios">
+                  <input id="hour3" name="view3" type="radio" checked>
+                  <label for="hour3" onclick="">Hourly</label>
 
-              <div class="switch-toggle switch-ios">
-                <input id="hour3" name="view3" type="radio" checked>
-                <label for="hour3" onclick="">Hourly</label>
+                  <input id="day3" name="view3" type="radio">
+                  <label for="day3" onclick="">Daily</label>
 
-                <input id="day3" name="view3" type="radio">
-                <label for="day3" onclick="">Daily</label>
+                  <input id="week3" name="view3" type="radio">
+                  <label for="week3" onclick="">Weekly</label>
 
-                <input id="week3" name="view3" type="radio">
-                <label for="week3" onclick="">Weekly</label>
+                  <input id="month3" name="view3" type="radio">
+                  <label for="month3" onclick="">Monthly</label>
 
-                <input id="month3" name="view3" type="radio">
-                <label for="month3" onclick="">Monthly</label>
-
-                <a></a>
+                  <a></a>
+                </div>
               </div>
-
-              <div class="chart-container" style="position: relative; height:200px; width:400px">
+              <!-- chart -->
+              <div class="chart-container" style="position: relative; height:200px; width:500px">
                 <canvas id="lineChart" width="400" height="270"></canvas>
               </div>
-            </div>
           </div>
 
           <div class="daily-traffic">
@@ -171,8 +172,8 @@
                 <option value="madrid">Madrid</option>
               </select><br>
             </div>
-            <button class="button" name="submit" type="submit" value="submit-true">SAVE</button>
-            <button class="button" name="submit" type="submit" value="submit-true">CANCEL</button>
+            <button class="save" name="submit" type="submit" value="submit-true">SAVE</button>
+            <button class="cancel" name="submit" type="submit" value="submit-true">CANCEL</button>
 
           </div>
         </div>
