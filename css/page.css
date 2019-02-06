@@ -105,10 +105,15 @@ aside img {
 /* tab backgroundColor #fbfbfb */
 
 .alert {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: #7377bf;
   color: white;
   border-radius: 5px;
   width: 1050;
+  height: 40px;
   padding: 10px;
   margin: 10px;
 }
@@ -116,6 +121,10 @@ aside img {
 a[href="#close"] {
   color: white;
   text-decoration: none;
+}
+
+.tabs {
+  height: 65px;
 }
 
 .tabs,
@@ -127,9 +136,17 @@ a[href="#close"] {
   margin: 0 20px;
 }
 
+/* .search-space {
+  background-color: #fbfbfb;
+  border: 2px solid #dfdfdf;
+  height: 100%;
+  width: 900px;
+} */
+
 .dashboard-search {
-  padding:17px;
+  padding: 5px;
   width:380px;
+  height: 40px;
   border:1px solid #f5f5f5;
   border-radius: 5px;
   color:gray;
