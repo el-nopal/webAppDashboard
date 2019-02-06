@@ -203,9 +203,11 @@ img[alt="google-icon"] {
 .dan {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
+
+/* --- RECENT ACTIVITY --- */
 
 
 /* --- MESSAGE USER --- */
