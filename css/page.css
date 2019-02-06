@@ -54,6 +54,16 @@ header .title {
   width: 20px;
 }
 
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #85db81;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px 25px 0;
+  padding-right: 5px;
+}
+
 .vl {
   border-left: 2px solid #5d61bf;
   height: 40px;
@@ -93,6 +103,20 @@ aside img {
 
 /* --- DASHBOARD SEARCH --- */
 /* tab backgroundColor #fbfbfb */
+
+.alert {
+  background-color: #7377bf;
+  color: white;
+  border-radius: 5px;
+  width: 1050;
+  padding: 10px;
+  margin: 10px;
+}
+
+a[href="#close"] {
+  color: white;
+  text-decoration: none;
+}
 
 .tabs,
 .traffic-switch {
@@ -173,6 +197,16 @@ img[alt="google-icon"] {
   border-radius: 50%;
 }
 
+.victoria,
+.dale,
+.dawn,
+.dan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 /* --- MESSAGE USER --- */
 /* 490 / 125*/
@@ -214,6 +248,15 @@ img[alt="google-icon"] {
 
 
 /* --- SETTINGS --- */
+.profile-switch,
+.email-switch {
+  width: 85px;
+}
+
+.profile-public {
+
+}
+
 #timezone {
   background-color: #fbfbfb;
   color: #bebebe;

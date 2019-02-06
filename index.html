@@ -18,6 +18,7 @@
         </div>
         <div class="profile">
           <img src="icons/icon-bell.svg" alt="bell">
+          <span class="dot"></span>
           <div class="vl"></div>
           <img src="images/smallpete.jpg" alt="profile">
           <p>Peter Kropotkin</p>
@@ -38,6 +39,10 @@
             <div class="tabs">
               <h1>Dashboard</h1>
               <input class="dashboard-search" type="text" name="name" placeholder="Search">
+            </div>
+            <div class="alert">
+              <p>Alert Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <span><a href="#close">&#10006;</a></span>
             </div>
               <!-- title-switch -->
               <div class="traffic-switch">
@@ -140,28 +145,40 @@
 
           <div class="settings" id="settings">
             <p>settings</p>
-            <label class="switch-light switch-ios" onclick="">
-            <input type="checkbox">
-            <strong>
-              send email notificatons
-            </strong>
-            <span>
-              <span>Off</span>
-              <span>On</span>
-              <a></a>
-            </span>
-            </label>
-            <label class="switch-light switch-ios" onclick="">
-            <input type="checkbox">
-            <strong>
-              set profile to pulbics
-            </strong>
-            <span>
-              <span>Off</span>
-              <span>On</span>
-              <a></a>
-            </span>
-            </label>
+            <div class="send-email">
+              <p>
+                send email notificatons
+              </p>
+              <div class="email-switch">
+                <label class="switch-light switch-ios" onclick="">
+                <input type="checkbox">
+
+                <span>
+                  <span>Off</span>
+                  <span>On</span>
+                  <a></a>
+                </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="public-profile">
+              <p>
+                set profile to pulbics
+              </p>
+              <div class="profile-switch">
+                <label class="switch-light switch-ios" onclick="">
+                <input type="checkbox">
+
+                <span>
+                  <span>Off</span>
+                  <span>On</span>
+                  <a></a>
+                </span>
+                </label>
+              </div>
+            </div>
+
             <div class="select-timezone">
               <label class="label" for="timezone">Select Timezone</label><br class="out">
               <select class="input" id="timezone" name="timezone">
