@@ -1,0 +1,16 @@
+/* ====== ASIDE LAYOUTS ====== */
+@import "../utilities/index";
+
+aside {
+  background-color: $aside-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 0;
+}
+
+aside img {
+  width: 35px;
+  margin: 15px 0;
+}
