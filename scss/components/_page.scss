@@ -1,49 +1,6 @@
 /* ====== PAGE LAYOUTS ====== */
 @import "../utilities/index";
 
-/* --- HEADER --- */
-header .title {
-  margin: 0 20px;
-}
-
-.profile {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 0 20px;
-}
-
-.profile img[alt="bell"],
-.vl,
-.profile img[alt="profile"],
-.profile p {
-  margin: 0 5px;
-}
-
-.profile img[alt="bell"] {
-  width: 20px;
-}
-
-.dot {
-  height: 5px;
-  width: 5px;
-  background-color: #85db81;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 10px 25px 0;
-  padding-right: 5px;
-}
-
-.vl {
-  border-left: 2px solid #5d61bf;
-  height: 40px;
-}
-
-.profile img[alt="profile"] {
-  width: 30px;
-  border-radius: 50%;
-}
 
 /* --- ASIDE --- */
 aside img {
@@ -73,15 +30,15 @@ aside img {
 }
 
 /* --- DASHBOARD SEARCH --- */
-/* tab backgroundColor #fbfbfb */
+/* tab backgroundColor $background-grey */
 
 .alert {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #7377bf;
-  color: white;
+  background-color: $uni-purple;
+  color: $white-font;
   border-radius: 5px;
   width: 1050;
   height: 40px;
@@ -90,7 +47,7 @@ aside img {
 }
 
 a[href="#close"] {
-  color: white;
+  color: $white-font;
   text-decoration: none;
 }
 
@@ -108,7 +65,7 @@ a[href="#close"] {
 }
 
 /* .search-space {
-  background-color: #fbfbfb;
+  background-color: $background-grey;
   border: 2px solid #dfdfdf;
   height: 100%;
   width: 900px;
@@ -150,7 +107,7 @@ a[href="#close"] {
 .twitter,
 .facebook,
 .google {
-  background-color: #fbfbfb;
+  background-color: $background-grey;
   width: 330px;
   height: 115px;
   border: 2px solid #d2d2d2;
@@ -208,7 +165,7 @@ img[alt="google-icon"] {
 }
 
 .message input {
-  background-color: #fbfbfb;
+  background-color: $background-grey;
   width: 100%;
   border-radius: 5px;
   margin: 10px 0;
@@ -217,7 +174,7 @@ img[alt="google-icon"] {
 }
 
 .message textarea {
-  background-color: #fbfbfb;
+  background-color: $background-grey;
   width: 100%;
   height: 125px;
   margin: 10px 0;
@@ -227,11 +184,11 @@ img[alt="google-icon"] {
 }
 
 .message button {
-  background-color: #7377bf;
-  color: white;
+  background-color: $uni-purple;
+  color: $white-font;
   width: 100%;
   height: 45px;
-  border: 1px solid  #7377bf;
+  border: 1px solid  $uni-purple;
   border-radius: 5px;
   margin: 10px 0;
 }
@@ -248,7 +205,7 @@ img[alt="google-icon"] {
 }
 
 #timezone {
-  background-color: #fbfbfb;
+  background-color: $background-grey;
   color: #bebebe;
   width: 100%;
   border: 1px solid #d1d1d1;
@@ -256,18 +213,18 @@ img[alt="google-icon"] {
 }
 
 .settings .save {
-  background-color: #7377bf;
-  color: white;
+  background-color: $uni-purple;
+  color: $white-font;
   width: 230px;
   height: 45px;
-  border: 1px solid  #7377bf;
+  border: 1px solid  $uni-purple;
   border-radius: 5px;
   margin: 10px 0;
 }
 
 .settings .cancel {
   background-color: #b2b2b2;
-  color: white;
+  color: $white-font;
   width: 230px;
   height: 45px;
   border: 1px solid  #b2b2b2;

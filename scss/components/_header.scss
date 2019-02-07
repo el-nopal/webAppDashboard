@@ -1,0 +1,46 @@
+/* ====== HEADER LAYOUTS ====== */
+@import "../utilities/index";
+
+
+header .title {
+  margin: 0 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.profile img[alt="bell"],
+.vl,
+.profile img[alt="profile"],
+.profile p {
+  margin: 0 5px;
+}
+
+.profile img[alt="bell"] {
+  width: 20px;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #85db81;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px 25px 0;
+  padding-right: 5px;
+}
+
+.vl {
+  border-left: 2px solid #5d61bf;
+  height: 40px;
+}
+
+.profile img[alt="profile"] {
+  width: 30px;
+  border-radius: 50%;
+}
