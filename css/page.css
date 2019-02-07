@@ -1,6 +1,6 @@
 /* ====== PAGE LAYOUTS ====== */
 /* --- BASE --- */
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -28,7 +28,7 @@ main {
 
 h4 {
   text-transform: uppercase;
-}
+} */
 
 /* --- HEADER --- */
 header .title {
