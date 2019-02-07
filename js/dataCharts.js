@@ -11,6 +11,8 @@ let donutChart = new Chart(DONUT, {
           }],
       },
     options: {
+      responsive: true,
+      maintainAspectRatio: false,
       legend: {
         position: 'right',
       },
@@ -21,7 +23,6 @@ Chart.defaults.global.legend.display = false;
 Chart.defaults.global.tooltips.enabled = false;
 
 //  --- LINE CHART ---
-// height:270px; width:400px
 const LINE = document.getElementById('lineChart')
 let lineChart = new Chart(LINE, {
   type: 'line',
@@ -33,6 +34,8 @@ let lineChart = new Chart(LINE, {
     }],
   },
   options: {
+    responsive: true,
+    maintainAspectRatio: false,
     elements: {
       line: {
         tension: 0,
@@ -78,6 +81,8 @@ let barChart = new Chart(BAR, {
         }]
     },
     options: {
+      responsive: true,
+      maintainAspectRatio: false,
         scales: {
             yAxes: [{
                 ticks: {

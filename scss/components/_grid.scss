@@ -102,3 +102,29 @@ main {
 .google h3 {
   grid-area: name;
 }
+
+// --- SETTINGS ---
+// .switches {
+//   display: grid;
+//   grid-row: 60px 60px;
+//   grid-column: 180px 1fr;
+//   grid-template-areas:
+//   "send switch1"
+//   "set switch"
+// }
+//
+// .send {
+//   grid-area: send;
+// }
+//
+// .set {
+//   grid-area: set;
+// }
+//
+// .email-switch {
+//   grid-area: switch1;
+// }
+//
+// .profile-switch {
+//   grid-area: switch2;
+// }
