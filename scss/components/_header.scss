@@ -1,7 +1,6 @@
 /* ====== HEADER LAYOUTS ====== */
 @import "../utilities/index";
 
-
 header {
   background-color: $header-color;
   color: $white-font;
@@ -10,7 +9,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 
 header .title {
   margin: 0 20px;
