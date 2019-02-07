@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* ==== MIXINS ==== */
 /* ==== Variables ==== */
+/* ==== Variables ==== */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -343,8 +344,13 @@ template {
 /* --- BASE --- */
 /* ==== MIXINS ==== */
 /* ==== Variables ==== */
+/* ==== Variables ==== */
 * {
   box-sizing: border-box;
+}
+
+p {
+  margin: 10px 0;
 }
 
 a {
@@ -358,6 +364,7 @@ h4 {
 
 /* ====== ASIDE LAYOUTS ====== */
 /* ==== MIXINS ==== */
+/* ==== Variables ==== */
 /* ==== Variables ==== */
 aside {
   background-color: #4d4c72;
@@ -378,6 +385,7 @@ aside img {
 /* header  70px (1825)*/
 /* aside  90px */
 /* ==== MIXINS ==== */
+/* ==== Variables ==== */
 /* ==== Variables ==== */
 /* === overall grid === */
 .grid {
@@ -470,6 +478,7 @@ main {
 /* ====== HEADER LAYOUTS ====== */
 /* ==== MIXINS ==== */
 /* ==== Variables ==== */
+/* ==== Variables ==== */
 header {
   background-color: #7477bf;
   color: #ffffff;
@@ -525,8 +534,8 @@ header .title {
 /* ====== MAIN LAYOUTS ====== */
 /* ==== MIXINS ==== */
 /* ==== Variables ==== */
+/* ==== Variables ==== */
 /* ========== MAIN ======== */
-.dashboard,
 .daily-traffic,
 .mobile,
 .social,
@@ -535,10 +544,14 @@ header .title {
 .message,
 .settings {
   border: 1px solid #d2d2d2;
+  padding: 20px;
+}
+
+.main {
+  color: #676666;
 }
 
 /* --- DASHBOARD SEARCH --- */
-/* tab backgroundColor $background-grey */
 .alert {
   display: flex;
   flex-direction: row;
@@ -566,12 +579,6 @@ header .title {
   margin: 0 20px;
 }
 
-/* .search-space {
-  background-color: $background-grey;
-  border: 2px solid #dfdfdf;
-  height: 100%;
-  width: 900px;
-} */
 .dashboard-search {
   color: #bcbcbc;
   background-image: url("http://i47.tinypic.com/r02vbq.png");
@@ -586,21 +593,12 @@ header .title {
 }
 
 /* ---- DAILY TRAFFIC --- */
-.daily-traffic {
-  display: block;
-  padding: 0 5%;
-}
-
 /* --- MOBILE USERS --- */
-.mobile {
-  padding: 0 5%;
-}
-
 /* --- SOCIAL STATS --- */
 .social-blocks {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -648,21 +646,13 @@ img[alt=google-icon] {
 .dan {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
 /* --- RECENT ACTIVITY --- */
 /* --- MESSAGE USER --- */
 /* 490 / 125*/
-.message {
-  padding: 30px;
-}
-
-.message p {
-  margin: 10px 0;
-}
-
 .message input {
   background-color: #fbfbfb;
   width: 100%;
@@ -727,6 +717,7 @@ img[alt=google-icon] {
 }
 
 /* ==== MIXINS ==== */
+/* ==== Variables ==== */
 /* ==== Variables ==== */
 /*
 * CSS TOGGLE SWITCH

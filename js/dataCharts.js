@@ -21,6 +21,7 @@ Chart.defaults.global.legend.display = false;
 Chart.defaults.global.tooltips.enabled = false;
 
 //  --- LINE CHART ---
+// height:270px; width:400px
 const LINE = document.getElementById('lineChart')
 let lineChart = new Chart(LINE, {
   type: 'line',
@@ -53,9 +54,6 @@ let lineChart = new Chart(LINE, {
          },
 
 });
-
-
-
 
 // --- BAR CHART ---
 const BAR = document.getElementById("barChart");

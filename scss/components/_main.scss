@@ -2,10 +2,6 @@
 @import "../utilities/index";
 
 /* ========== MAIN ======== */
-
-
-
-.dashboard,
 .daily-traffic,
 .mobile,
 .social,
@@ -13,17 +9,18 @@
 .activity,
 .message,
 .settings {
-  border: 1px solid $borders;
+  @include reg-border;
+  padding: 20px;
 }
 
-/* --- DASHBOARD SEARCH --- */
-/* tab backgroundColor $background-grey */
+.main {
+  color: #676666;
+}
 
+
+/* --- DASHBOARD SEARCH --- */
 .alert {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-row;
   background-color: $uni-purple;
   color: $white;
   border-radius: 5px;
@@ -39,19 +36,9 @@
 
 .tabs,
 .traffic-switch {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-row;
   margin: 0 20px;
 }
-
-/* .search-space {
-  background-color: $background-grey;
-  border: 2px solid #dfdfdf;
-  height: 100%;
-  width: 900px;
-} */
 
 .dashboard-search {
   color: $input-text;
@@ -67,23 +54,14 @@
 }
 
 /* ---- DAILY TRAFFIC --- */
-.daily-traffic {
-  display: block;
-  padding: 0 5%;
-}
+
 
 /* --- MOBILE USERS --- */
-.mobile {
-  padding: 0 5%;
-}
+
 
 /* --- SOCIAL STATS --- */
 .social-blocks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
+  @include flex-row;
 }
 
 .twitter,
@@ -128,10 +106,8 @@ img[alt="google-icon"] {
 .dale,
 .dawn,
 .dan {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  @include flex-row;
+
 }
 
 /* --- RECENT ACTIVITY --- */
@@ -139,13 +115,6 @@ img[alt="google-icon"] {
 
 /* --- MESSAGE USER --- */
 /* 490 / 125*/
-.message {
-  padding: 30px;
-}
-.message p {
-  margin: 10px 0;
-}
-
 .message input {
   background-color: $background-grey;
   width: 100%;
@@ -175,15 +144,10 @@ img[alt="google-icon"] {
   margin: 10px 0;
 }
 
-
 /* --- SETTINGS --- */
 .profile-switch,
 .email-switch {
   width: 85px;
-}
-
-.profile-public {
-
 }
 
 #timezone {

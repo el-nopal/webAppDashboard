@@ -1,7 +1,13 @@
 /* ==== MIXINS ==== */
+@import "variables";
+
+@mixin reg-border {
+  border: 1px solid $borders;
+}
 
 @mixin flex-row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
