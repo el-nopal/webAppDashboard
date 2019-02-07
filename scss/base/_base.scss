@@ -1,6 +1,13 @@
 /* --- BASE --- */
+@import "../utilities/index";
+
 * {
   box-sizing: border-box;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
 }
 
 h4 {

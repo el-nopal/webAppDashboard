@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* ==== MIXINS ==== */
 /* ==== Variables ==== */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -340,8 +341,15 @@ template {
 }
 
 /* --- BASE --- */
+/* ==== MIXINS ==== */
+/* ==== Variables ==== */
 * {
   box-sizing: border-box;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 h4 {
@@ -349,6 +357,7 @@ h4 {
 }
 
 /* ====== ASIDE LAYOUTS ====== */
+/* ==== MIXINS ==== */
 /* ==== Variables ==== */
 aside {
   background-color: #4d4c72;
@@ -368,6 +377,7 @@ aside img {
 /* total 1190 x 1895 */
 /* header  70px (1825)*/
 /* aside  90px */
+/* ==== MIXINS ==== */
 /* ==== Variables ==== */
 /* === overall grid === */
 .grid {
@@ -389,21 +399,6 @@ main {
   grid-row: main;
 }
 
-/* --- dashboard tab --- */
-/* .tabs {
-  display: grid;
-  grid-template-columns: 155px 1fr;
-  grid-template-areas:
-  "tab space"
-}
-
-h1 .tab {
-  grid-area: tab;
-}
-
-.search-space {
-  grid-area: space;
-} */
 /* === MAIN GRID === */
 .main {
   display: grid;
@@ -473,6 +468,7 @@ h1 .tab {
 }
 
 /* ====== HEADER LAYOUTS ====== */
+/* ==== MIXINS ==== */
 /* ==== Variables ==== */
 header {
   background-color: #7477bf;
@@ -527,6 +523,7 @@ header .title {
 }
 
 /* ====== MAIN LAYOUTS ====== */
+/* ==== MIXINS ==== */
 /* ==== Variables ==== */
 /* ========== MAIN ======== */
 .dashboard,
@@ -556,11 +553,6 @@ header .title {
   margin: 10px;
 }
 
-a[href="#close"] {
-  color: #ffffff;
-  text-decoration: none;
-}
-
 .tabs {
   height: 65px;
 }
@@ -581,16 +573,16 @@ a[href="#close"] {
   width: 900px;
 } */
 .dashboard-search {
-  padding: 5px;
-  width: 380px;
-  height: 40px;
-  border: 1px solid #f5f5f5;
-  border-radius: 5px;
-  color: gray;
+  color: #bcbcbc;
   background-image: url("http://i47.tinypic.com/r02vbq.png");
   background-repeat: no-repeat;
   background-position: right center;
   outline: 0;
+  width: 380px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
 }
 
 /* ---- DAILY TRAFFIC --- */
@@ -676,7 +668,7 @@ img[alt=google-icon] {
   width: 100%;
   border-radius: 5px;
   margin: 10px 0;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #dbdbdb;
   padding: 15px;
 }
 
@@ -685,7 +677,7 @@ img[alt=google-icon] {
   width: 100%;
   height: 125px;
   margin: 10px 0;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #dbdbdb;
   border-radius: 5px;
   padding: 15px;
 }
@@ -708,9 +700,9 @@ img[alt=google-icon] {
 
 #timezone {
   background-color: #fbfbfb;
-  color: #bebebe;
+  color: #bcbcbc;
   width: 100%;
-  border: 1px solid #d1d1d1;
+  border: 1px solid #dbdbdb;
   border-radius: 5px;
 }
 
@@ -734,6 +726,7 @@ img[alt=google-icon] {
   margin: 10px 0;
 }
 
+/* ==== MIXINS ==== */
 /* ==== Variables ==== */
 /*
 * CSS TOGGLE SWITCH

@@ -33,11 +33,6 @@
   margin: 10px;
 }
 
-a[href="#close"] {
-  color: $white;
-  text-decoration: none;
-}
-
 .tabs {
   height: 65px;
 }
@@ -59,16 +54,16 @@ a[href="#close"] {
 } */
 
 .dashboard-search {
-  padding: 5px;
-  width:380px;
-  height: 40px;
-  border:1px solid $input-border;
-  border-radius: 5px;
-  color:gray;
+  color: $input-text;
   background-image:url('http://i47.tinypic.com/r02vbq.png');
   background-repeat:no-repeat;
   background-position:right center;
   outline:0;
+  width:380px;
+  height: 40px;
+  padding: 5px;
+  border:1px solid $input-border;
+  border-radius: 5px;
 }
 
 /* ---- DAILY TRAFFIC --- */
