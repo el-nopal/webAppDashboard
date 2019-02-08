@@ -68,6 +68,17 @@
   margin: 20px 0;
 }
 
+.switch-toggle.switch-ios {
+  margin: 0 5px;
+}
+
+.switch-toggle.switch-ios input,
+.switch-toggle.switch-ios label {
+  padding: 0 20px;
+}
+
+
+
 /* ---- DAILY TRAFFIC --- */
 #barChart {
   margin: 2em 0;
