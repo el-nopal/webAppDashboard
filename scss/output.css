@@ -483,16 +483,12 @@ header .title {
 
 .profile img[alt=bell] {
   width: 20px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
 }
 
-.dot {
-  height: 5px;
-  width: 5px;
-  background-color: #85db81;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 10px 25px 0;
-  padding-right: 5px;
+.profile img[alt=bell]:hover {
+  width: 40px;
 }
 
 .vl {
@@ -630,9 +626,7 @@ header .title {
   border-radius: 5px;
 }
 
-img[alt=twiter-icon],
-img[alt=facebook-icon],
-img[alt=google-icon] {
+.social-icon {
   background-color: #7477bf;
   width: 70px;
   height: 70px;

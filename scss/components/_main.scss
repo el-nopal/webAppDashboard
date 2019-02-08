@@ -112,18 +112,12 @@
   border-radius: 5px;
 }
 
-img[alt="twiter-icon"],
-img[alt="facebook-icon"],
-img[alt="google-icon"] {
+.social-icon {
   background-color: $header-color;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   margin: 20px 35px;
-}
-
-.name-number {
-
 }
 
 .twitter h3,
