@@ -39,33 +39,32 @@
                 <input class="dashboard-search" type="text" name="name" placeholder="Search">
               </div>
             </div>
-            <div class="alert">
-              <p> <b>Alert</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#close">&#10006;</a>
-            </div>
-              <!-- title-switch -->
-              <div class="traffic-switch">
-                <p>traffic</p>
-                <div class="switch-toggle switch-ios">
-                  <input id="hour3" name="view3" type="radio" checked>
-                  <label for="hour3" onclick="">Hourly</label>
-
-                  <input id="day3" name="view3" type="radio">
-                  <label for="day3" onclick="">Daily</label>
-
-                  <input id="week3" name="view3" type="radio">
-                  <label for="week3" onclick="">Weekly</label>
-
-                  <input id="month3" name="view3" type="radio">
-                  <label for="month3" onclick="">Monthly</label>
-
-                  <a></a>
+            <!-- alert -->
+            <div class="dashboard-content">
+              <div class="alert">
+                <p> <b>Alert</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <a href="#close">&#10006;</a>
+              </div>
+                <!-- title-switch -->
+                <div class="traffic-switch">
+                  <p>traffic</p>
+                  <div class="switch-toggle switch-ios">
+                    <input id="hour3" name="view3" type="radio" checked>
+                    <label for="hour3" onclick="">Hourly</label>
+                    <input id="day3" name="view3" type="radio">
+                    <label for="day3" onclick="">Daily</label>
+                    <input id="week3" name="view3" type="radio">
+                    <label for="week3" onclick="">Weekly</label>
+                    <input id="month3" name="view3" type="radio">
+                    <label for="month3" onclick="">Monthly</label>
+                    <a></a>
+                  </div>
                 </div>
-              </div>
-              <!-- chart -->
-              <div class="line-container" style="position: relative; height: 16.87em; width: 65.62em">
-                <canvas id="lineChart"></canvas>
-              </div>
+                <!-- chart -->
+                <div class="line-container" style="position: relative; height: 16.87em; width: 100%">
+                  <canvas id="lineChart"></canvas>
+                </div>
+            </div>
           </div>
 
           <div class="daily-traffic">
@@ -107,23 +106,34 @@
             <p>new members</p>
             <div class="members">
               <div class="victoria">
-                <img src="images/profiles/member-1.jpg" alt="">
-                <p>Victoria Chambers <br> victoria.chambers80@example.com</p>
+                <div class="pic-words">
+                  <img src="images/profiles/member-1.jpg" alt="">
+                  <p>Victoria Chambers <br> victoria.chambers80@example.com</p>
+                </div>
                 <p>10/15/15</p>
               </div>
+              <hr>
               <div class="dale">
-                <img src="images/profiles/member-2.jpg" alt="">
-                <p>Dale Byrd <br> dale.byrd52@example.com</p>
+                <div class="pic-words">
+                  <img src="images/profiles/member-2.jpg" alt="">
+                  <p>Dale Byrd <br> dale.byrd52@example.com</p>
+                </div>
                 <p>10/15/15</p>
               </div>
+              <hr>
               <div class="dawn">
-                <img src="images/profiles/member-3.jpg" alt="">
-                <p>Dawn Wood <br> dawn.wood16@example.com</p>
+                <div class="pic-words">
+                  <img src="images/profiles/member-3.jpg" alt="">
+                  <p>Dawn Wood <br> dawn.wood16@example.com</p>
+                </div>
                 <p>10/15/15</p>
               </div>
+              <hr>
               <div class="dan">
-                <img src="images/profiles/member-4.jpg" alt="">
-                <p>Dan Oliver <br> dan.oliver82@example.com</p>
+                <div class="pic-words">
+                  <img src="images/profiles/member-4.jpg" alt="">
+                  <p>Dan Oliver <br> dan.oliver82@example.com</p>
+                </div>
                 <p>10/15/15</p>
               </div>
             </div>
@@ -134,23 +144,34 @@
             <p>recent activity</p>
             <div class="members">
               <div class="victoria">
-                <img src="images/profiles/member-1.jpg" alt="">
-                <p>Victoria Chambers commented on YourApps's SEO Tips <br> 4 hours ago</p>
+                <div class="pic-words">
+                  <img src="images/profiles/member-1.jpg" alt=""><br>
+                  <p>Victoria Chambers commented on YourApps's SEO Tips <br> 4 hours ago</p>
+                </div>
                 <p> &gt; </p>
               </div>
+              <hr>
               <div class="dale">
-                <img src="images/profiles/member-2.jpg" alt="">
-                <p>Dale Byrd liked the post Facebook's Changes For 2016 <br> 5 hours ago</p>
+                <div class="pic-words">
+                  <img src="images/profiles/member-2.jpg" alt="">
+                  <p>Dale Byrd liked the post Facebook's Changes For 2016 <br> 5 hours ago</p>
+                </div>
                 <p> &gt; </p>
               </div>
+              <hr>
               <div class="dawn">
-                <img src="images/profiles/member-3.jpg" alt="">
-                <p>Dawn Wood commented on Facebook's Changes For 2016 <br> 5 hours ago</p>
+                <div class="pic-words">
+                  <img src="images/profiles/member-3.jpg" alt="">
+                  <p>Dawn Wood commented on Facebook's Changes For 2016 <br> 5 hours ago</p>
+                </div>
                 <p> &gt; </p>
               </div>
+              <hr>
               <div class="dan">
-                <img src="images/profiles/member-4.jpg" alt="">
-                <p>Dan Oliver posted YourApp's SEO Tips <br> 1 day ago</p>
+                <div class="pic-words">
+                  <img src="images/profiles/member-4.jpg" alt="">
+                  <p>Dan Oliver posted YourApp's SEO Tips <br> 1 day ago</p>
+                </div>
                 <p> &gt; </p>
               </div>
             </div>
@@ -170,7 +191,7 @@
             <div class="options">
               <div class="switches">
                 <div class="send-email">
-                  <p class="send"> send email notificatons</p>
+                  <p> send email notificatons</p>
                   <div class="email-switch">
                     <label class="switch-light switch-ios" onclick="">
                     <input type="checkbox">
@@ -183,7 +204,7 @@
                   </div>
                 </div>
                 <div class="public-profile">
-                  <p class="set">set profile to pulbics</p>
+                  <p>set profile to pulbics</p>
                   <div class="profile-switch">
                     <label class="switch-light switch-ios" onclick="">
                     <input type="checkbox">
@@ -197,7 +218,6 @@
                 </div>
               </div>
               <div class="select-timezone">
-                <label class="label" for="timezone">Select Timezone</label><br class="out">
                 <select class="input" id="timezone" name="timezone">
                   <option value="select">Select Timezone</option>
                   <option value="losangeles">Los Angeles</option>

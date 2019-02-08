@@ -358,6 +358,12 @@ a {
   text-decoration: none;
 }
 
+hr {
+  border: 0.25px solid #dbdbdb;
+  width: 90%;
+  margin: 10px auto;
+}
+
 h4 {
   text-transform: uppercase;
 }
@@ -381,12 +387,6 @@ aside img {
 }
 
 /* ====== GRID LAYOUTS ====== */
-/* total 1190 x 1895 */
-/* header  70px (1825)*/
-/* aside  90px */
-/* ==== MIXINS ==== */
-/* ==== Variables ==== */
-/* ==== Variables ==== */
 /* === overall grid === */
 .grid {
   display: grid;
@@ -551,27 +551,12 @@ header .title {
   color: #676666;
 }
 
-/* --- DASHBOARD SEARCH --- */
-.alert {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #7377bf;
-  color: #ffffff;
-  border-radius: 5px;
-  width: 1050;
-  height: 40px;
-  padding: 10px;
-  margin: 10px;
-}
-
+/* --- DASHBOARD --- */
 .tabs {
   height: 65px;
 }
 
-.tabs,
-.traffic-switch {
+.tabs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -590,6 +575,32 @@ header .title {
   padding: 5px;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
+}
+
+.dashboard-content {
+  padding: 20px;
+}
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7377bf;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.traffic-switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
 }
 
 /* ---- DAILY TRAFFIC --- */
@@ -642,12 +653,7 @@ img[alt=google-icon] {
   margin: 0;
 }
 
-/* --- NEW MEMBERS --- */
-.members img {
-  width: 30px;
-  border-radius: 50%;
-}
-
+/* --- NEW MEMBERS / RECENT ACTIVITY --- */
 .victoria,
 .dale,
 .dawn,
@@ -656,11 +662,30 @@ img[alt=google-icon] {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-size: 14px;
+  margin: 20px 0;
 }
 
-/* --- RECENT ACTIVITY --- */
+.pic-words {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.members img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.victoria p,
+.dale p,
+.dawn p,
+.dan p {
+  margin: 0 10px;
+}
+
 /* --- MESSAGE USER --- */
-/* 490 / 125*/
 .input-row {
   width: 30.625em;
 }
@@ -709,6 +734,7 @@ img[alt=google-icon] {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin: 25px 0;
 }
 
 .send-email p,
@@ -722,6 +748,8 @@ img[alt=google-icon] {
   width: 100%;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
+  padding: 10px;
+  margin: 15px 0;
 }
 
 .save-cancel {
@@ -1072,49 +1100,6 @@ img[alt=google-icon] {
     left: 83%;
   }
 
-  /* Candy Theme
-  * Based on the "Sort Switches / Toggles (PSD)" by Ormal Clarck
-  * http://www.premiumpixels.com/freebies/sort-switches-toggles-psd/
-  */
-  .switch-toggle.switch-candy,
-.switch-light.switch-candy > span {
-    background-color: #2d3035;
-    border-radius: 3px;
-    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.2);
-  }
-
-  .switch-light.switch-candy span span,
-.switch-light.switch-candy input:checked ~ span span:first-child,
-.switch-toggle.switch-candy label {
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 1px 1px 1px #191b1e;
-  }
-
-  .switch-light.switch-candy input ~ span span:first-child,
-.switch-light.switch-candy input:checked ~ span span:nth-child(2),
-.switch-candy input:checked + label {
-    color: #333;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  }
-
-  .switch-candy a {
-    border: 1px solid #333;
-    border-radius: 3px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45);
-    background-color: #70c66b;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), transparent);
-  }
-
-  .switch-candy-blue a {
-    background-color: #38a3d4;
-  }
-
-  .switch-candy-yellow a {
-    background-color: #f5e560;
-  }
-
   /* iOS Theme
   */
   .switch-ios.switch-light span span {
@@ -1203,151 +1188,6 @@ img[alt=google-icon] {
 
   .switch-ios input:checked + label {
     color: #ffffff;
-  }
-
-  /* Holo Theme
-  */
-  .switch-toggle.switch-holo,
-.switch-light.switch-holo > span {
-    background-color: #464747;
-    border-radius: 1px;
-    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0;
-    color: #fff;
-    text-transform: uppercase;
-  }
-
-  .switch-holo label {
-    color: #fff;
-  }
-
-  .switch-holo > span span {
-    opacity: 0;
-    transition: all 0.1s;
-  }
-
-  .switch-holo > span span:first-of-type {
-    opacity: 1;
-  }
-
-  .switch-holo > span span,
-.switch-holo label {
-    font-size: 85%;
-    line-height: 2.15625em;
-  }
-
-  .switch-holo a {
-    background-color: #666;
-    border-radius: 1px;
-    box-shadow: inset rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.3) 0 -1px 0;
-  }
-
-  /* Selected ON switch-light
-  */
-  .switch-holo.switch-light input:checked ~ span a {
-    background-color: #0E88B1;
-  }
-
-  .switch-holo.switch-light input:checked ~ span span:first-of-type {
-    opacity: 0;
-  }
-
-  .switch-holo.switch-light input:checked ~ span span:last-of-type {
-    opacity: 1;
-  }
-
-  /* Material Theme
-  */
-  /* switch-light
-  */
-  .switch-light.switch-material a {
-    top: -0.1875em;
-    width: 1.75em;
-    height: 1.75em;
-    border-radius: 50%;
-    background: #fafafa;
-    box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.14), 0 0.1875em 0.125em -0.125em rgba(0, 0, 0, 0.2), 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.12);
-    transition: right 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .switch-material.switch-light {
-    overflow: visible;
-  }
-
-  .switch-material.switch-light::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-
-  .switch-material.switch-light > span {
-    overflow: visible;
-    position: relative;
-    top: 0.1875em;
-    width: 3.25em;
-    height: 1.5em;
-    min-height: auto;
-    border-radius: 1em;
-    background: rgba(0, 0, 0, 0.26);
-  }
-
-  .switch-material.switch-light span span {
-    position: absolute;
-    clip: rect(0 0 0 0);
-  }
-
-  .switch-material.switch-light input:checked ~ span a {
-    right: 0;
-    background: #3f51b5;
-    box-shadow: 0 0.1875em 0.25em 0 rgba(0, 0, 0, 0.14), 0 0.1875em 0.1875em -0.125em rgba(0, 0, 0, 0.2), 0 0.0625em 0.375em 0 rgba(0, 0, 0, 0.12);
-  }
-
-  .switch-material.switch-light input:checked ~ span {
-    background: rgba(63, 81, 181, 0.5);
-  }
-
-  /* switch-toggle
-  */
-  .switch-toggle.switch-material {
-    overflow: visible;
-  }
-
-  .switch-toggle.switch-material::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-
-  .switch-toggle.switch-material a {
-    top: 48%;
-    width: 0.375em !important;
-    height: 0.375em;
-    margin-left: 0.25em;
-    background: #3f51b5;
-    border-radius: 100%;
-    transform: translateY(-50%);
-    transition: transform 0.4s ease-in;
-  }
-
-  .switch-toggle.switch-material label {
-    color: rgba(0, 0, 0, 0.54);
-    font-size: 1em;
-  }
-
-  .switch-toggle.switch-material label:before {
-    content: "";
-    position: absolute;
-    top: 48%;
-    left: 0;
-    display: block;
-    width: 0.875em;
-    height: 0.875em;
-    border-radius: 100%;
-    border: 0.125em solid rgba(0, 0, 0, 0.54);
-    transform: translateY(-50%);
-  }
-
-  .switch-toggle.switch-material input:checked + label:before {
-    border-color: #3f51b5;
   }
 
   /* ripple
