@@ -70,33 +70,31 @@ main {
 
 /* === social blocks === */
 
-.twitter,
-.facebook,
-.google {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-  "image name"
-  "image number"
-}
-
-.twitter img,
-.facebook img,
-.google img {
-  grid-area: image;
-}
-
-.twitter p,
-.facebook p,
-.google p {
-  grid-area: number;
-}
-
-.twitter h3,
-.facebook h3,
-.google h3 {
-  grid-area: name;
-}
-
-// --- SETTINGS ---
+// .twitter,
+// .facebook,
+// .google {
+//   display: grid;
+//   grid-template-rows: 1fr 1fr;
+//   grid-template-columns: 1fr 1fr;
+//   grid-template-areas:
+//   "image name"
+//   "image number"
+// }
+//
+// .twitter img,
+// .facebook img,
+// .google img {
+//   grid-area: image;
+// }
+//
+// .twitter p,
+// .facebook p,
+// .google p {
+//   grid-area: number;
+// }
+//
+// .twitter h3,
+// .facebook h3,
+// .google h3 {
+//   grid-area: name;
+// }

@@ -449,33 +449,6 @@ main {
 }
 
 /* === social blocks === */
-.twitter,
-.facebook,
-.google {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "image name" "image number";
-}
-
-.twitter img,
-.facebook img,
-.google img {
-  grid-area: image;
-}
-
-.twitter p,
-.facebook p,
-.google p {
-  grid-area: number;
-}
-
-.twitter h3,
-.facebook h3,
-.google h3 {
-  grid-area: name;
-}
-
 /* ====== HEADER LAYOUTS ====== */
 /* ==== MIXINS ==== */
 /* ==== Variables ==== */
@@ -647,6 +620,9 @@ header .title {
 .twitter,
 .facebook,
 .google {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   background-color: #fbfbfb;
   width: 330px;
   height: 115px;
@@ -661,19 +637,21 @@ img[alt=google-icon] {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  margin: auto;
+  margin: 20px 35px;
 }
 
 .twitter h3,
 .facebook h3,
 .google h3 {
   color: #7477bf;
+  margin: 20px 0 0 0;
 }
 
-.twitter h1,
-.facebook h1,
-.google h1 {
+.twitter p,
+.facebook p,
+.google p {
   margin: 0;
+  font-size: 3em;
 }
 
 /* --- NEW MEMBERS / RECENT ACTIVITY --- */
@@ -1211,75 +1189,6 @@ img[alt=google-icon] {
 
   .switch-ios input:checked + label {
     color: #ffffff;
-  }
-
-  /* ripple
-  */
-  .switch-light.switch-material > span:before,
-.switch-light.switch-material > span:after,
-.switch-toggle.switch-material label:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    display: block;
-    width: 4em;
-    height: 4em;
-    border-radius: 100%;
-    background: #3f51b5;
-    opacity: 0.4;
-    margin-left: -1.25em;
-    margin-top: -1.25em;
-    transform: scale(0);
-    transition: opacity 0.4s ease-in;
-  }
-
-  .switch-light.switch-material > span:after {
-    left: auto;
-    right: 0;
-    margin-left: 0;
-    margin-right: -1.25em;
-  }
-
-  .switch-toggle.switch-material label:after {
-    width: 3.25em;
-    height: 3.25em;
-    margin-top: -0.75em;
-  }
-
-  @keyframes materialRipple {
-    0% {
-      transform: scale(0);
-    }
-    20% {
-      transform: scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: scale(1);
-    }
-  }
-  .switch-material.switch-light input:not(:checked) ~ span:after,
-.switch-material.switch-light input:checked ~ span:before,
-.switch-toggle.switch-material input:checked + label:after {
-    animation: materialRipple 0.4s ease-in;
-  }
-
-  /* trick to prevent the default checked ripple animation from showing
-  * when the page loads.
-  * the ripples are hidden by default, and shown only when the input is focused.
-  */
-  .switch-light.switch-material.switch-light input ~ span:before,
-.switch-light.switch-material.switch-light input ~ span:after,
-.switch-material.switch-toggle input + label:after {
-    visibility: hidden;
-  }
-
-  .switch-light.switch-material.switch-light input:focus:checked ~ span:before,
-.switch-light.switch-material.switch-light input:focus:not(:checked) ~ span:after,
-.switch-material.switch-toggle input:focus:checked + label:after {
-    visibility: visible;
   }
 }
 /* Bugfix for older Webkit, including mobile Webkit. Adapted from

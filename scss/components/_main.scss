@@ -102,6 +102,9 @@
 .twitter,
 .facebook,
 .google {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   background-color: $background-grey;
   width: 330px;
   height: 115px;
@@ -116,19 +119,25 @@ img[alt="google-icon"] {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  margin: auto;
+  margin: 20px 35px;
+}
+
+.name-number {
+
 }
 
 .twitter h3,
 .facebook h3,
 .google h3 {
   color: $header-color;
+  margin: 20px 0 0 0;
 }
 
-.twitter h1,
-.facebook h1,
-.google h1 {
+.twitter p,
+.facebook p,
+.google p {
   margin: 0;
+  font-size: 3em;
 }
 
 /* --- NEW MEMBERS / RECENT ACTIVITY --- */
