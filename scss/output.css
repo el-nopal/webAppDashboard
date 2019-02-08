@@ -632,6 +632,16 @@ header .title {
   height: 70px;
   border-radius: 50%;
   margin: 20px 35px;
+  position: relative;
+  float: left;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .twitter h3,
