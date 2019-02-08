@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Web App Dashboard</title>
     <link rel="stylesheet" href="scss/output.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> 
   </head>
   <body>
     <div class="grid">
@@ -47,7 +48,7 @@
               </div>
                 <!-- title-switch -->
                 <div class="traffic-switch">
-                  <p>traffic</p>
+                  <h5>traffic</h5>
                   <div class="switch-toggle switch-ios">
                     <input id="hour3" name="view3" type="radio" checked>
                     <label for="hour3" onclick="">Hourly</label>
@@ -68,21 +69,21 @@
           </div>
 
           <div class="daily-traffic">
-            <p>daily traffic</p>
+            <h5>daily traffic</h5>
             <div class="bar-container" style="position: relative; height: 14.0625em; width: 30em">
               <canvas id="barChart"></canvas>
             </div>
           </div>
 
           <div class="mobile">
-            <p>mobile users</p>
+            <h5>mobile users</h5>
             <div class="donut-container" style="position: relative; height: 15.625em; width: 25em">
               <canvas id="donutChart"></canvas>
             </div>
           </div>
 
           <div class="social" id="visits">
-            <p>social stats</p>
+            <h5>social stats</h5>
             <div class="social-blocks">
               <div class="twitter">
                 <img src="images/icons/icon-twitter.svg" alt="twiter-icon">
@@ -103,7 +104,7 @@
           </div>
 
           <div class="new-members" id="members">
-            <p>new members</p>
+            <h5>new members</h5>
             <div class="members">
               <div class="victoria">
                 <div class="pic-words">
@@ -141,7 +142,7 @@
 
 
           <div class="activity">
-            <p>recent activity</p>
+            <h5>recent activity</h5>
             <div class="members">
               <div class="victoria">
                 <div class="pic-words">
@@ -178,7 +179,7 @@
           </div>
 
           <div class="message">
-            <p>message user</p>
+            <h5>message user</h5>
             <div class="input-row">
               <input class="user-input" type="text" name="name" placeholder="Search for User"><br>
               <textarea class="input type" name="topic" rows="5" cols="21" placeholder="Message for User"></textarea><br>
@@ -187,7 +188,7 @@
           </div>
 
           <div class="settings" id="settings">
-            <p>settings</p>
+            <h5>settings</h5>
             <div class="options">
               <div class="switches">
                 <div class="send-email">

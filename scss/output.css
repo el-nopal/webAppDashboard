@@ -364,8 +364,9 @@ hr {
   margin: 10px auto;
 }
 
-h4 {
+h5 {
   text-transform: uppercase;
+  margin: 10px 0;
 }
 
 /* ====== ASIDE LAYOUTS ====== */
@@ -504,7 +505,7 @@ header .title {
 .vl,
 .profile img[alt=profile],
 .profile p {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 .profile img[alt=bell] {
@@ -549,6 +550,7 @@ header .title {
 
 .main {
   color: #676666;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 /* --- DASHBOARD --- */
