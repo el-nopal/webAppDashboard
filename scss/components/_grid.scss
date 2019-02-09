@@ -22,18 +22,23 @@ main {
 }
 
 /* --- MAIN GRID --- */
+
 .main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 65px 440px 350px 230px 350px 390px;
+  grid-template-rows: 65px 440px repeat(8, 350px);
   grid-template-areas:
-  "dashboard dashboard"
-  "dashboard dashboard"
-  "daily mobile"
-  "social social"
-  "members activity"
-  "message settings"
+  "dashboard"
+  "dashboard"
+  "daily"
+  "mobile"
+  "social"
+  "members"
+  "activity"
+  "message"
+  "settings"
 }
+
 
 .dashboard {
   grid-area: dashboard;
@@ -72,17 +77,13 @@ main {
   .main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 65px 440px repeat(8, 350px);
+    grid-template-rows: 65px 440px 350px 230px 350px 390px;
     grid-template-areas:
-    "dashboard"
-    "dashboard"
-    "daily"
-    "mobile"
-    "social"
-    "social"
-    "members"
-    "activity"
-    "message"
-    "settings"
+    "dashboard dashboard"
+    "dashboard dashboard"
+    "daily mobile"
+    "social social"
+    "members activity"
+    "message settings"
   }
 }
