@@ -45,3 +45,58 @@ header .title {
   width: 30px;
   border-radius: 50%;
 }
+
+// === MEDIA QUERIES ===
+
+@media (min-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  header .title {
+    margin: 0 10px;
+  }
+
+  .profile {
+    margin: 0;
+  }
+
+  .profile img[alt="bell"],
+  .vl,
+  .profile img[alt="profile"],
+  .profile p {
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    @include flex-row;
+  }
+
+  header .title {
+    margin: 0 20px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+
+  .profile img[alt="bell"],
+  .vl,
+  .profile img[alt="profile"],
+  .profile p {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .profile {
+    margin: 0 20px;
+  }
+}

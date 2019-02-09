@@ -349,6 +349,11 @@ template {
   box-sizing: border-box;
 }
 
+main {
+  color: #676666;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
 p {
   margin: 10px 0;
 }
@@ -387,6 +392,29 @@ aside img {
   margin: 15px 0;
 }
 
+@media (min-width: 320px) {
+  aside {
+    display: flex;
+    flex-direction: row;
+    padding: 0 3%;
+  }
+
+  aside img {
+    margin: 15px;
+  }
+}
+@media (min-width: 768px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px 0;
+  }
+
+  aside img {
+    margin: 15px 0;
+  }
+}
 /* ====== GRID LAYOUTS ====== */
 /* === overall grid === */
 .grid {
@@ -408,6 +436,22 @@ main {
   grid-row: main;
 }
 
+@media (min-width: 320px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 70px 1825px;
+    grid-template-areas: "header" "nav" "main";
+  }
+}
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 90px 2fr;
+    grid-template-rows: 70px 1825px;
+    grid-template-areas: "header header" "nav main";
+  }
+}
 /* === MAIN GRID === */
 .main {
   display: grid;
@@ -448,7 +492,14 @@ main {
   grid-area: settings;
 }
 
-/* === social blocks === */
+@media (min-width: 320px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 65px 440px 350px 230px 350px 390px;
+    grid-template-areas: "dashboard" "dashboard" "daily" "mobile" "social social" "social" "members" "activity" "message" "settings";
+  }
+}
 /* ====== HEADER LAYOUTS ====== */
 /* ==== MIXINS ==== */
 /* ==== Variables ==== */
@@ -501,6 +552,59 @@ header .title {
   border-radius: 50%;
 }
 
+@media (min-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  header .title {
+    margin: 0 10px;
+  }
+
+  .profile {
+    margin: 0;
+  }
+
+  .profile img[alt=bell],
+.vl,
+.profile img[alt=profile],
+.profile p {
+    margin: 0 5px;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .title {
+    margin: 0 20px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+
+  .profile img[alt=bell],
+.vl,
+.profile img[alt=profile],
+.profile p {
+    margin: 0 10px;
+  }
+}
+@media (min-width: 1020px) {
+  .profile {
+    margin: 0 20px;
+  }
+}
 /* ====== MAIN LAYOUTS ====== */
 /* ==== MIXINS ==== */
 /* ==== Variables ==== */
@@ -514,12 +618,7 @@ header .title {
 .message,
 .settings {
   border: 1px solid #d2d2d2;
-  padding: 20px;
-}
-
-.main {
-  color: #676666;
-  font-family: "Open Sans Condensed", sans-serif;
+  padding: 1.25em;
 }
 
 /* --- DASHBOARD --- */
@@ -530,9 +629,8 @@ header .title {
   align-items: center;
 }
 
-.tabs h3 {
-  width: 160px;
-  margin: 0 20px;
+.tabs h2 {
+  margin: 0 2%;
 }
 
 .search-space {
@@ -551,17 +649,16 @@ header .title {
   background-image: url("http://i47.tinypic.com/r02vbq.png");
   background-repeat: no-repeat;
   background-position: right center;
-  outline: 0;
-  width: 380px;
+  width: 23.75em;
   height: 40px;
   padding: 10px;
-  margin: 0 20px;
+  margin: 0 2%;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
 }
 
 .dashboard-content {
-  padding: 20px;
+  padding: 1.25em;
 }
 
 .alert {
@@ -583,7 +680,7 @@ header .title {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin: 1.25em 0;
 }
 
 .switch-toggle.switch-ios {
@@ -592,7 +689,7 @@ header .title {
 
 .switch-toggle.switch-ios input,
 .switch-toggle.switch-ios label {
-  padding: 0 20px;
+  padding: 0 1.25em;
 }
 
 /* ---- DAILY TRAFFIC --- */
@@ -631,7 +728,7 @@ header .title {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  margin: 20px 35px;
+  margin: 1.25em 35px;
   position: relative;
   float: left;
 }
@@ -640,15 +737,15 @@ header .title {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 1.25em;
+  left: 1.25em;
 }
 
 .twitter h3,
 .facebook h3,
 .google h3 {
   color: #7477bf;
-  margin: 20px 0 0 0;
+  margin: 1.25em 0 0 0;
 }
 
 .twitter p,
@@ -668,7 +765,7 @@ header .title {
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
-  margin: 20px 0;
+  margin: 1.25em 0;
 }
 
 .pic-words {
