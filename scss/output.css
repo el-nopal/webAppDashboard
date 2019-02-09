@@ -881,6 +881,31 @@ header .title {
   margin: 10px 0;
 }
 
+@media (min-width: 320px) {
+  .search-space {
+    justify-content: space-between;
+  }
+
+  .dashboard-search {
+    width: 20%;
+    margin: 0 1%;
+  }
+}
+@media (min-width: 768px) {
+  .dashboard-search {
+    width: 23.75em;
+    margin: 0 15%;
+  }
+}
+@media (min-width: 1020px) {
+  .search-space {
+    justify-content: flex-end;
+  }
+
+  .dashboard-search {
+    margin: 0 2%;
+  }
+}
 /* ==== MIXINS ==== */
 /* ==== Variables ==== */
 /* ==== Variables ==== */
