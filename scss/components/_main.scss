@@ -254,17 +254,10 @@
 }
 
 // ====== MEDIA QUERIES ======
-@media (min-width: 320px) {
+@media (min-width: 768px) {
   .search-space {
     justify-content: space-between;
   }
-  .dashboard-search {
-    width: 20%;
-    margin: 0 1%;
-  }
-}
-
-@media (min-width: 768px) {
   .dashboard-search {
     width: 23.75em;
     margin: 0 15%;
